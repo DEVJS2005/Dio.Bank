@@ -46,7 +46,7 @@ namespace Dio.Bank
             this.Saldo += valorDeposito;
             Console.WriteLine("O Saldo atual da conta de:{0} é {1}", this.Nome, this.Saldo);
         }
-        public void tranferir(double valorTranferencia, Conta contaDestino)
+        public void transferir(double valorTranferencia, Conta contaDestino)
         {
             if (this.sacar(valorTranferencia)){
                 contaDestino.depositar(valorTranferencia);
